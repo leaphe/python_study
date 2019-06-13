@@ -1,5 +1,5 @@
 #!bin/sh
-starttime=`date +'%Y-%m-%d %H:%M:%S'`
+starttime= date +'%Y-%m-%d %H:%M:%S'
 
  echo starttime
 
