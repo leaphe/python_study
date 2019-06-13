@@ -10,4 +10,6 @@ git commit -m 'Davis'
 echo '正在提交远程库'
 git push origin master
 echo '执行成功'
+
+chmod 777 git.sh
  
