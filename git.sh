@@ -17,6 +17,8 @@ echo '执行成功'
 
 chmod 777 git.sh
 
+endtime= date +'%Y-%m-%d %H:%M:%S'
 
-#执行程序
-endtime=date +'%Y-%m-%d %H:%M:%S'
+echo ‘endtime’+endtime
+
+ 
