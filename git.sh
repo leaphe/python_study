@@ -18,7 +18,7 @@ git push origin master
 echo '执行成功'
 
 
-sleep 60
+#sleep 60
 
  
 endTime=`date +%Y%m%d-%H:%M`
