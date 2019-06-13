@@ -24,6 +24,11 @@ endTime=`date +%Y%m%d-%H:%M`
 endTime_s=`date +%s`
 
 
+sumTime=$[ $endTime_s - $startTime_s ]
+ 
+echo "$startTime ---> $endTime" "Totl:$sumTime minutes" 
+
+
 #chmod 777 git.sh
 
  
