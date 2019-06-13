@@ -1,4 +1,10 @@
 #!bin/sh
+startTime=`date +%Y%m%d-%H:%M`
+ 
+startTime_s=`date +%s`
+
+#sleep 12
+
 cd ~/Users/hexizan/documents/python_study
 pwd
 git --version
@@ -11,11 +17,7 @@ echo '正在提交远程库'
 git push origin master
 echo '执行成功'
 
-startTime=`date +%Y%m%d-%H:%M`
- 
-startTime_s=`date +%s`
 
-sleep 12
 
 
  
