@@ -1,10 +1,11 @@
 #!bin/sh
+cd ~/Users/hexizan/documents/python_study
 pwd
 git config user.name 'leaphe'
 git config user.email '13918825181@qq.com'
 git add .
-echo '111111'
+echo '正在提交本地库'
 git commit -m 'Davis'
-echo '2222'
+echo '正在提交远程库'
 git push origin master
  
