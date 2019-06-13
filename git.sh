@@ -41,6 +41,20 @@ endtime= date +'%Y-%m-%d %H:%M:%S'
      echo "$startTime ---> $endTime" "Totl:$useTime minutes"  >> /tmp/usertime.txt
 
  }
+ 
+ hello () {
+
+     echo "hello !"
+
+     sleep 120
+
+ }
+
+ 
+
+ Command=hello
+
+ UseTime $Command
 
  
 
