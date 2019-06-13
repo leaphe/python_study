@@ -1,4 +1,3 @@
-#!bin/sh
 #!/bin/bash
 cd ~/Users/hexizan/documents/python_study
 pwd
