@@ -1,7 +1,7 @@
 #!bin/sh
-starttime=date +'%Y-%m-%d %H:%M:%S'
+starttime=`date +'%Y-%m-%d %H:%M:%S'`
 
- 
+ echo starttime
 
 cd ~/Users/hexizan/documents/python_study
 pwd
@@ -18,4 +18,9 @@ echo '执行成功'
 chmod 777 git.sh
 
 
+#执行程序
+endtime=`date +'%Y-%m-%d %H:%M:%S'`
+start_seconds=$(date --date="$starttime" +%s);
+end_seconds=$(date --date="$endtime" +%s);
+echo "本次运行时间： "$((end_seconds-start_seconds))"s"
  
