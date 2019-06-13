@@ -1,9 +1,4 @@
 #!bin/sh
-startTime=date +%Y%m%d-%H:%M
-
-startTime_s=date +%s
- 
-
 cd ~/Users/hexizan/documents/python_study
 pwd
 git --version
@@ -19,17 +14,13 @@ echo '执行成功'
 chmod 777 git.sh
 
  
-
-     endTime=date +%Y%m%d-%H:%M
-
-     endTime_s=date +%s
- 
-
-     sumTime=$[ $endTime_s - $startTime_s ]
-
-     useTime=$[ $sumTime / 60 ]
-
-     echo "$startTime ---> $endTime" "Totl:$useTime minutes"   
+starttime=`date +'%Y-%m-%d %H:%M:%S'`
+sleep 18
+#执行程序
+endtime=`date +'%Y-%m-%d %H:%M:%S'`
+start_seconds=$(date --date="$starttime" +%s);
+end_seconds=$(date --date="$endtime" +%s);
+echo "本次运行时间： "$((end_seconds-start_seconds))"s"
 
  
  
