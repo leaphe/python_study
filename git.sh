@@ -22,14 +22,25 @@ endtime= date +'%Y-%m-%d %H:%M:%S'
 #echo ‘endtime’+endtime
 
 
-start_time=date--date='0 days ago' "+%Y-%m-%d %H:%M:%S"
-#this is your shell script 
-sleep 18
-##############
-finish_time=date--date='0 days ago' "+%Y-%m-%d %H:%M:%S"
-duration=$(($(($(date +%s -d "$finish_time")-$(date +%s -d "$start_time")))))
-echo "this shell script execution duration: $duration"
- 
+ UseTime () {
+
+     startTime=`date +%Y%m%d-%H:%M`
+
+     startTime_s=`date +%s`
+
+     $Command              #根据自己脚本路径，测试脚本文件执行时间（sh test.sh)
+
+     endTime=`date +%Y%m%d-%H:%M`
+
+     endTime_s=`date +%s`
+
+     sumTime=$[ $endTime_s - $startTime_s ]
+
+     useTime=$[ $sumTime / 60 ]
+
+     echo "$startTime ---> $endTime" "Totl:$useTime minutes"  >> /tmp/usertime.txt
+
+ }
 
  
 
