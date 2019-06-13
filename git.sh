@@ -2,7 +2,7 @@
 DATE=`date`
 echo "Date is $DATE"
 
-startTime=`date +%Y%m%d-%H:%M`
+startTime=`date +%Y%m%d %H:%M`
  
 startTime_s=`date +%s`
 
