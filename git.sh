@@ -31,8 +31,6 @@ duration=$(($(($(date +%s -d "$finish_time")-$(date +%s -d "$start_time")))))
 echo "this shell script execution duration: $duration"
  
 
-start_seconds=$(date--date="$starttime" +%s)
-end_seconds=$(date--date="$endtime" +%s)
-echo "本次运行时间： "$((end_seconds-start_seconds))"s"
+
 
  
