@@ -17,6 +17,13 @@ startTime_s=`date +%s`
 
 sleep 10
 
+
+ 
+endTime=`date +%Y%m%d-%H:%M`
+ 
+endTime_s=`date +%s`
+
+
 #chmod 777 git.sh
 
  
