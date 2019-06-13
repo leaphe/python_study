@@ -19,7 +19,7 @@ chmod 777 git.sh
 
 endtime= date +'%Y-%m-%d %H:%M:%S'
 
-echo ‘endtime’+endtime
+#echo ‘endtime’+endtime
 
 
  
