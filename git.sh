@@ -1,8 +1,12 @@
 #!bin/sh
+DATE=`date`
+echo "Date is $DATE"
+
 startTime=`date +%Y%m%d-%H:%M`
  
 startTime_s=`date +%s`
 
+echo "Date is $startTime"
 
 
 cd ~/Users/hexizan/documents/python_study
@@ -21,7 +25,7 @@ echo '执行成功'
 #sleep 60
 
  
-endTime=`date +%Y%m%d-%H:%M`
+endTime=`date +%Y%m%d-%H:%M` 
  
 endTime_s=`date +%s`
 
