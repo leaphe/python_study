@@ -3,7 +3,7 @@ startTime=`date +%Y%m%d-%H:%M`
  
 startTime_s=`date +%s`
 
-#sleep 12
+sleep 12
 
 cd ~/Users/hexizan/documents/python_study
 pwd
