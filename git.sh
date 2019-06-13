@@ -1,7 +1,8 @@
 #!bin/sh
-starttime= date +'%Y-%m-%d %H:%M:%S'
+startTime=date +%Y%m%d-%H:%M
 
-#echo ‘starttime’+starttime
+startTime_s=date +%s
+ 
 
 cd ~/Users/hexizan/documents/python_study
 pwd
@@ -17,44 +18,22 @@ echo '执行成功'
 
 chmod 777 git.sh
 
-endtime= date +'%Y-%m-%d %H:%M:%S'
+ 
 
-#echo ‘endtime’+endtime
+     endTime=date +%Y%m%d-%H:%M
 
-
- UseTime () {
-
-     startTime=`date +%Y%m%d-%H:%M`
-
-     startTime_s=`date +%s`
-
-     $Command              #根据自己脚本路径，测试脚本文件执行时间（sh test.sh)
-
-     endTime=`date +%Y%m%d-%H:%M`
-
-     endTime_s=`date +%s`
+     endTime_s=date +%s
+ 
 
      sumTime=$[ $endTime_s - $startTime_s ]
 
      useTime=$[ $sumTime / 60 ]
 
-     echo "$startTime ---> $endTime" "Totl:$useTime minutes"  >> /tmp/usertime.txt
-
- }
- 
- hello () {
-
-     echo "hello !"
-
-     sleep 120
-
- }
+     echo "$startTime ---> $endTime" "Totl:$useTime minutes"   
 
  
-
- Command=hello
-
- UseTime $Command
+ 
+  
 
  
 
