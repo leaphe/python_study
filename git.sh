@@ -1,7 +1,7 @@
 #!bin/sh
 starttime= date +'%Y-%m-%d %H:%M:%S'
 
-echo ‘starttime’+starttime
+#echo ‘starttime’+starttime
 
 cd ~/Users/hexizan/documents/python_study
 pwd
