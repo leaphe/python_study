@@ -11,7 +11,10 @@ echo '正在提交远程库'
 git push origin master
 echo '执行成功'
 
-date
+startTime=`date +%Y%m%d-%H:%M`
+ 
+startTime_s=`date +%s`
+
 #chmod 777 git.sh
 
  
