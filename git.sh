@@ -9,7 +9,7 @@ startTime_s=`date +%s`
 echo "Date is $startTime"
 
 
-cd ~/Users/hexizan/documents/python_study
+cd /Users/hexizan/documents/python_study
 pwd
 git --version
 git config user.name 'leaphe'
