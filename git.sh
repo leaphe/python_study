@@ -1,4 +1,7 @@
 #!bin/sh
+
+python --version
+
 DATE=`date`
 echo "Date is $DATE"
 
