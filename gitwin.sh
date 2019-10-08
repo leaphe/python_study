@@ -25,8 +25,6 @@ git push origin master
 echo '执行成功'
 
 
-#sleep 60
-
  
 endTime=`date +%Y%m%d-%H:%M` 
  
@@ -38,6 +36,5 @@ sumTime=$[ $endTime_s - $startTime_s ]
 echo "$startTime ---> $endTime" "Totl:$sumTime Second" 
 
 
-#chmod 777 git.sh
 
  
